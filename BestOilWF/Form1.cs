@@ -128,24 +128,13 @@ namespace BestOilWF
             }
             lbl_Cafe_All_Price.Text = CafeAllPrice.ToString();
         }
-        private void Btn_Calculate_Click(object sender, EventArgs e)
-        {
-            lbl_All_Price.Text = (double.Parse(lbl_Benzin_All_Price.Text) + double.Parse(lbl_Cafe_All_Price.Text)).ToString();
-        }
+        private void Btn_Calculate_Click(object sender, EventArgs e) => lbl_All_Price.Text = (double.Parse(lbl_Benzin_All_Price.Text) + double.Parse(lbl_Cafe_All_Price.Text)).ToString();
 
-        private void Btn_Exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
-        private void Btn_Exit_MouseHover(object sender, EventArgs e)
-        {
-            btn_Exit.BackColor = Color.DarkRed;
-        }
+        private void Btn_Exit_Click(object sender, EventArgs e) => Application.Exit();
 
-        private void Btn_Exit_MouseLeave(object sender, EventArgs e)
-        {
-            btn_Exit.BackColor = Color.Transparent;
-        }
+        private void Btn_Exit_MouseHover(object sender, EventArgs e) => btn_Exit.BackColor = Color.DarkRed;
+
+        private void Btn_Exit_MouseLeave(object sender, EventArgs e) => btn_Exit.BackColor = Color.Transparent;
     }
 }

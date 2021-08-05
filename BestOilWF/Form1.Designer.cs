@@ -29,6 +29,7 @@ namespace BestOilWF
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gb_Petrol = new System.Windows.Forms.GroupBox();
             this.pb_Benzin = new System.Windows.Forms.PictureBox();
             this.pb_Petrol_Total_Price = new System.Windows.Forms.PictureBox();
@@ -746,9 +747,11 @@ namespace BestOilWF
             this.Controls.Add(this.gb_Cafe);
             this.Controls.Add(this.gb_Petrol);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "BestOil";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gb_Petrol.ResumeLayout(false);
